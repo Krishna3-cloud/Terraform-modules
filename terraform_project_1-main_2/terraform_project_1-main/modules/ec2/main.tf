@@ -38,7 +38,7 @@ resource "null_resource" "web_make" {
 connection {
 	type = "ssh"
 	user = "ec2-user"
-	private_key = file("/home/anubhav/Downloads/Anubhav.pem")
+	private_key = file("C:\Users\User\Downloads\terraform_proj.pem")
 	host = aws_instance.apache_web.public_ip   
  }
 provisioner "remote-exec" {
